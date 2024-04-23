@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Garbage Flux</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css')}}" />
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                    <script>alert("{{ message }}")</script>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        
+    </head>
+    <body>
+    
+        <div class="card_login">
+            <div class="titulo">
+                <h1>Garbage Flux</h1>
+            </div>
+            <div class="conteudo">
+                <div class="imagem_lixeira">
+                    <img src="{{url_for('static', filename='img/lixeira.png')}}" alt="Imagem de lixeira" />
+                </div>
+                <form action="{{url_for('login_form')}}" method="post">
+                    <p>Usuario:</p>
+                    <input type="text" name="usuario" id="usuario" placeholder="Usuario" required />
+                    <p>Senha:</p>
+                    <input type="password" name="senha" id="senha" placeholder="Senha" required />
+                    <br />
+                    <input type="submit" value="Entrar" />
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

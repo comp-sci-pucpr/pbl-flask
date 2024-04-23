@@ -1,0 +1,70 @@
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background: dodgerblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card_login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #87cefa;
+    padding: 20px;
+    width: 80%;
+    margin: 10%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.4);
+    min-width: 500px;
+    min-height: 300px;
+}
+
+.conteudo{
+    display: flex;
+    flex: row;
+}
+.imagem_lixeira {
+    width: 200px;
+    height: 200px;
+    min-width: 200px;
+    min-height: 200px;
+}
+.card_login img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20%;
+}
+
+.card_login form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.card_login form p,
+.card_login form input {
+    margin: 5px 0px;
+}
+
+.card_login form input {
+    border-width: 2px;
+    border-color: #64bbf1;
+    border-radius: 5px;
+}
+input[type="submit"] {
+    padding: 5px 0px 5px 0px;
+}
+
+input[type="submit"]:hover {
+    background-color: grey;
+    cursor: pointer;
+}
